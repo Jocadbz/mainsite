@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Comandos - Jack Frost</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Jack Frost</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Comandos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../comandosadm/" class="nav-link">Comandos de Administrador</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../comandosadm/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#lista-de-comandos-do-jack-frost" class="nav-link">Lista de comandos do Jack Frost</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#adivinhar" class="nav-link">Adivinhar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#aposta" class="nav-link">Aposta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#avatar" class="nav-link">Avatar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#banner" class="nav-link">Banner</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#battle" class="nav-link">Battle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#cancelamento" class="nav-link">Cancelamento</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#casamento" class="nav-link">Casamento</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#chess" class="nav-link">Chess</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#cowsay" class="nav-link">Cowsay</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#daily" class="nav-link">Daily</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#doar" class="nav-link">Doar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#duelo" class="nav-link">Duelo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#images" class="nav-link">Images</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#investir" class="nav-link">Investir</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#jackgpt" class="nav-link">Jackgpt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#jogo" class="nav-link">Jogo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#lojinha" class="nav-link">Lojinha</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nsfw" class="nav-link">NSFW</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#onlyjack" class="nav-link">Onlyjack</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#perfil" class="nav-link">Perfil</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ping" class="nav-link">Ping</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ppp" class="nav-link">Ppp</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ppt" class="nav-link">Ppt</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#premium" class="nav-link">Premium</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#rank" class="nav-link">Rank</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#roleta" class="nav-link">Roleta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#roll" class="nav-link">Roll</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sabio" class="nav-link">Sábio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ship" class="nav-link">Ship</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#subornar-ship" class="nav-link">Subornar ship</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sobre" class="nav-link">Sobre</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="lista-de-comandos-do-jack-frost">Lista de comandos do Jack Frost</h1>
+<h2 id="adivinhar">Adivinhar</h2>
+<p>Aposta uma quantidade de dinheiro com o bot. Escolha um número de 1 a 10, e se você estiver correto, ganhará 10x a quantidade apostada. Caso perca, perderá a quantidade apostada.<br />
+<img alt="Comando Adivinhar" src="../imagens/adivinhar.png" title="Comando Adivinhar" /><br><br> 
+<code>d$adivinhar &lt;quantidade&gt; &lt;número&gt;</code></p>
+<h2 id="aposta">Aposta</h2>
+<p>Aposta uma quantidade de dinheiro com outro usuário. Manda uma solicitação, se o usuário aceitar, o bot gira a roleta, e o ganhador fica com tudo apostado.<br />
+<img alt="Comando aposta" src="../imagens/aposta1.png" title="Comando aposta" /><br><br>
+<img alt="Comando aposta" src="../imagens/aposta2.png" title="Comando aposta" /><br><br>
+<code>d$aposta &lt;quantidade&gt; &lt;usuário&gt;</code></p>
+<h2 id="avatar">Avatar</h2>
+<p>Mostra o avatar de um usuário.<br>
+<img alt="Comando aposta" src="../imagens/avatar.png" title="Comando aposta" /><br><br>
+<code>d$avatar &lt;usuário&gt;</code></p>
+<h2 id="banner">Banner</h2>
+<p>Mostra o banner de um usuário.<br>
+<img alt="Comando banner" src="../imagens/banner.png" title="Comando banner" /><br><br>
+<code>d$banner &lt;usuário&gt;</code></p>
+<h2 id="battle">Battle</h2>
+<p>Mostra o avatar de um usuário.<br>
+<img alt="Comando battle" src="../imagens/battle.png" title="Comando battle" /><br><br>
+<code>d$battle &lt;argumento 1&gt; &lt;argumento 2&gt;</code></p>
+<h2 id="cancelamento">Cancelamento</h2>
+<p>Gera algumas frases como motivo de cancelamento.<br>
+<img alt="Comando battle" src="../imagens/cancelamento.png" title="Comando battle" /><br><br>
+<code>d$cancelamento</code></p>
+<h2 id="casamento">Casamento</h2>
+<p>Para o casal perfeito que não quer desgrudar nem no discord. Quando você é casado, seu parceiro/a irá aparecer no seu perfil, lembrando você do seu matrimônio.</p>
+<h3 id="casar">casar</h3>
+<p>Se case com alguém. Caso essa pessoa esteja casada, você receberá um alerta indicando que infelizmente, não rolou pra você.</p>
+<div class="admonition note">
+<p class="admonition-title">Com relação ao comando casar</p>
+<p>Caso você já esteja casado, e tente se casar com outra pessoa, o Jack Frost
+irá casualmente avisar seu parceiro/parceira sobre o ocorrido. Não compactuamos
+com traição.</p>
+</div>
+<p><code>d$casamento casar &lt;usuário&gt;</code></p>
+<h3 id="divorciar">divorciar</h3>
+<p>Se separou? Que pena. Com este comando, sinta-se livre novamente.</p>
+<div class="admonition note">
+<p class="admonition-title">Com relação ao comando divorciar</p>
+<p>Caso você se divorcie, o Jack Frost irá avisar seu parceiro/parceira.</p>
+</div>
+<p><code>d$casamento divorciar</code></p>
+<h2 id="chess">Chess</h2>
+<p>Jogue o glorioso jogo de xadrex com alguém!<br></p>
+<div class="admonition note">
+<p class="admonition-title">Regras importantes</p>
+<p>Para prevenir lances muito longos, o bot conta como desistência
+caso você não tenha jogado por 240 segundos. E todos os movimentos
+serão reconhecidor por meio da notação de movimentos <a href="https://www.chessprogramming.org/UCI">UCI</a>.</p>
+</div>
+<p><img alt="Comando battle" src="../imagens/chess.png" title="Comando battle" /><br><br>
+<code>d$chess &lt;usuário&gt;</code></p>
+<h2 id="cowsay">Cowsay</h2>
+<p>Coloca o texto em um balão de fala de uma vaca.<br></p>
+<p><img alt="Comando battle" src="../imagens/cowsay.png" title="Comando battle" /><br><br>
+<code>d$cowsay &lt;texto aleatório&gt;</code></p>
+<h2 id="daily">Daily</h2>
+<p>Ganha algumas Jacktitas. (Reseta a cada 40 minutos)<br></p>
+<p><img alt="Comando battle" src="../imagens/daily.png" title="Comando battle" /><br><br>
+<code>d$daily</code></p>
+<h2 id="doar">Doar</h2>
+<p>Doa uma quantidade de dinheiro para outra pessoa.<br></p>
+<p><img alt="Comando battle" src="../imagens/doar.png" title="Comando battle" /><br><br>
+<code>d$doar &lt;quantidade&gt; &lt;usuário&gt;</code></p>
+<h2 id="duelo">Duelo</h2>
+<p>Duela contra outro usuário.
+<img alt="Comando aposta" src="../imagens/duelo1.png" title="Comando aposta" /><br><br>
+<img alt="Comando aposta" src="../imagens/duelo2.png" title="Comando aposta" /><br><br>
+<code>d$duelo &lt;usuário&gt;</code></p>
+<h2 id="images">Images</h2>
+<p>Procura por imagens na internet em geral. (Apenas 20 resultados por pesquisa.)<br>
+<img alt="Comando aposta" src="../imagens/images.png" title="Comando aposta" /><br><br>
+<code>d$images &lt;assunto&gt;</code></p>
+<h2 id="investir">Investir</h2>
+<p>Invista na BDJF (Bolsa do Jack Frost) com suas Jacktitas. (E como na verdadeira bolsa de valores, você perde bastante...)<br>
+<img alt="Comando aposta" src="../imagens/investir.png" title="Comando aposta" /><br><br>
+<code>d$investir &lt;quantidade&gt;</code></p>
+<h2 id="jackgpt">Jackgpt</h2>
+<div class="admonition note">
+<p class="admonition-title">Aviso!</p>
+<p>Esse comando está temporariamente inoperável.</p>
+</div>
+<p>Fale com o Jack Frost utilizando a inteligência artificial.</p>
+<p><code>d$investir &lt;quantidade&gt;</code></p>
+<h2 id="jogo">Jogo</h2>
+<p>Simule uma partida de futebol<br />
+<img alt="Comando aposta" src="../imagens/jogo.png" title="Comando aposta" /><br><br>
+<code>d$jogo &lt;time 1&gt; &lt;time 2&gt;</code></p>
+<h2 id="lojinha">Lojinha</h2>
+<p>Compre benefícios no bot.<br>
+<img alt="Comando aposta" src="../imagens/lojinha.png" title="Comando aposta" /><br><br>
+<code>d$lojinha &lt;número para comprar&gt;</code></p>
+<h3 id="comando-personalizado">Comando Personalizado</h3>
+<p>Com <code>d$lojinha 2</code> é possível comprar um comando personalizado (válido apenas para um servidor.)<br>
+<img alt="Comando aposta" src="../imagens/lojinha2.png" title="Comando aposta" /><br><br></p>
+<div class="admonition note">
+<p class="admonition-title">Aviso!</p>
+<p>Caso seu comando seja julgado inapropriado pelos moderadores do servidor,
+ele poderá ser removido com <code>d$removercomando &lt;comando&gt;</code> pelos administradores.</p>
+</div>
+<h2 id="nsfw">NSFW</h2>
+<p>Utilizando a API do Rule34.xxx, o bot tem a capacidade de mostrar contéudo adulto.</p>
+<div class="admonition note">
+<p class="admonition-title">IMPORTANTE!</p>
+<p>Por padrão, todos os canais estão com este comando desabilitado. Os administradores
+podem, se desejarem, habilitar este comando no canal com <code>d$habilitarnsfw</code> (e podem
+desabilitar com <code>d$desabilitarnsfw</code>)</p>
+</div>
+<h3 id="hentai">Hentai</h3>
+<p>Pesquise no rule34.xxx por meio das tags.<br>
+<img alt="Comando aposta" src="../imagens/nsfw.png" title="Comando aposta" /><br><br>
+<code>d$nsfw hentai &lt;tags, separadas por espaços&gt;</code></p>
+<div class="admonition danger">
+<p class="admonition-title">IMPORTANTE!</p>
+<p>O bot Jack Frost é uma ferramenta de interação que fornece informações e entretenimento, mas não é responsável pelas imagens exibidas durante as interações, pois estas podem ser geradas ou selecionadas com base em algoritmos sem verificação de conteúdo. Além disso, Jack Frost não realiza a verificação da idade dos usuários, sendo de responsabilidade de cada um garantir que o conteúdo visual e textual seja apropriado para sua faixa etária. Ao utilizar o bot, você concorda com estas condições e reconhece que a responsabilidade pelo uso do conteúdo exibido é exclusivamente sua.</p>
+</div>
+<h2 id="onlyjack">Onlyjack</h2>
+<p>Um jeito de vender conteúdo pelo Jack Frost.</p>
+<h3 id="ver">Ver</h3>
+<p>Veja a sua página do Onlyjack, ou a página de outros.<br>
+<img alt="Comando aposta" src="../imagens/onlyjack1.png" title="Comando aposta" /><br><br>
+<code>d$onlyjack ver &lt;usuário&gt;</code></p>
+<h3 id="subscribe">Subscribe</h3>
+<p>Se inscreva na página de outras pessoas.<br>
+<img alt="Comando aposta" src="../imagens/onlyjack2.png" title="Comando aposta" /><br><br>
+<code>d$onlyjack subscribe &lt;usuário&gt;</code></p>
+<h3 id="consumir">Consumir</h3>
+<p>Consuma os conteúdos das páginas que você se inscreveu.<br />
+<code>d$onlyjack consumir</code></p>
+<h3 id="upload">Upload</h3>
+<p>Faça uploads de mídias para sua página.<br>
+<img alt="Comando aposta" src="../imagens/onlyjack3.png" title="Comando aposta" /><br><br>
+<code>d$onlyjack upload &lt;qualquer attachment&gt;</code></p>
+<h3 id="preco">Preço</h3>
+<p>Defina o preço da sua página.<br>
+<img alt="Comando aposta" src="../imagens/onlyjack4.png" title="Comando aposta" /><br><br>
+<code>d$onlyjack preco &lt;quantidade&gt;</code></p>
+<h3 id="description">Description</h3>
+<p>Defina a descrição da sua página.<br>
+<img alt="Comando aposta" src="../imagens/onlyjack5.png" title="Comando aposta" /><br><br>
+<code>d$onlyjack description &lt;texto&gt;</code></p>
+<h2 id="perfil">Perfil</h2>
+<p>Veja e altere seu perfil.</p>
+<div class="admonition note">
+<p class="admonition-title">Interessante!</p>
+<p>Usuários premium tem um perfil diferenciado!</p>
+</div>
+<h3 id="ver_1">Ver</h3>
+<p>Veja o seu perfil, ou o de outras pessoas<br>
+<img alt="Comando aposta" src="../imagens/perfil1.png" title="Comando aposta" /><br><br>
+<code>d$perfil ver &lt;pessoa&gt;</code></p>
+<div class="admonition note">
+<p class="admonition-title">Interessante!</p>
+<p>Caso você veja seu proprío perfil, é possível alterar seu
+"Sobre mim" clicando no botão diretamente.</p>
+</div>
+<h3 id="sobremim">Sobremim</h3>
+<p>Altere sua seção "Sobre mim" com este comando.<br>
+<code>d$perfil sobremim &lt;texto&gt;</code></p>
+<h2 id="ping">Ping</h2>
+<p>Preciso mesmo explicar esse?<br>
+<img alt="Comando aposta" src="../imagens/ping.png" title="Comando aposta" /><br><br>
+<code>d$ping</code></p>
+<h2 id="ppp">Ppp</h2>
+<p>O famoso jogo do "Pega, pensa, passa"<br />
+<img alt="Comando aposta" src="../imagens/ppp.png" title="Comando aposta" /><br><br>
+<code>d$ppp</code></p>
+<h2 id="ppt">Ppt</h2>
+<p>Se você acha que o melhor jeito de falar que gosta de alguém é por um comando de um bot, esse serve... eu acho.<br>
+<img alt="Comando aposta" src="../imagens/ppt.png" title="Comando aposta" /><br><br>
+<code>d$ppt &lt;usuário&gt;</code></p>
+<h2 id="premium">Premium</h2>
+<p>Obtenha informações sobre sua assinatura premium, e, se não tiver, como conseguir uma.<br>
+<img alt="Comando aposta" src="../imagens/premium.png" title="Comando aposta" /><br><br>
+<code>d$premium</code></p>
+<h2 id="rank">Rank</h2>
+<p>Veja os que tem mais XP o moedas em seu servidor.<br />
+<img alt="Comando aposta" src="../imagens/rank.png" title="Comando aposta" /><br><br>
+<code>d$rank &lt;xp ou coins&gt;</code></p>
+<h2 id="roleta">Roleta</h2>
+<p>Gire a roleta, e ganhe Jacktitas!<br />
+<img alt="Comando aposta" src="../imagens/roleta.png" title="Comando aposta" /><br><br>
+<code>d$roleta</code></p>
+<h2 id="roll">Roll</h2>
+<p>Utíl para RPGs, jogue dados, especifique quantos e quantas faces cada dado tem.<br>
+<img alt="Comando aposta" src="../imagens/roll.png" title="Comando aposta" /><br><br>
+<code>d$roll &lt;quantidade de faces&gt; &lt;quantidade de dados&gt;</code></p>
+<h2 id="sabio">Sábio</h2>
+<p>Quer a sabedoria imensa deste bor? Pergunte ao sábio, ele tem a resposta.<br>
+<img alt="Comando aposta" src="../imagens/sabio.png" title="Comando aposta" /><br><br>
+<code>d$sabio</code></p>
+<h2 id="ship">Ship</h2>
+<p>Awn, você shippa um casal, mas quer a resposta divina que eles foram feitos um para o outro? Este comando serve pra você!<br>
+<img alt="Comando aposta" src="../imagens/ship.png" title="Comando aposta" /><br><br>
+<code>d$ship &lt;coisa 1&gt; &lt;coisa 2&gt;</code></p>
+<h2 id="subornar-ship">Subornar ship</h2>
+<p>Ok, o universo não gosta de você. Mas com esse comando, você pode comprar o próprio universo.<br>
+<img alt="Comando aposta" src="../imagens/subornarship.png" title="Comando aposta" /><br><br>
+<code>d$subornarship &lt;porcentagem&gt; &lt;usuário&gt;</code></p>
+<h2 id="sobre">Sobre</h2>
+<p>Obtenha informações sobre o bot.<br>
+<img alt="Comando aposta" src="../imagens/sobre.png" title="Comando aposta" /><br><br>
+<code>d$sobre</code></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
