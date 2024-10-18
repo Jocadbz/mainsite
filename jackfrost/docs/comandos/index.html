@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +10,14 @@
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Comandos - Jack Frost</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../css/brands.min.css" rel="stylesheet">
-        <link href="../css/solid.min.css" rel="stylesheet">
-        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
@@ -26,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand" href="..">Jack Frost</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -34,20 +33,20 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="nav-item">
+                            <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Comandos</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Comandos</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="navitem">
                                 <a href="../comandosadm/" class="nav-link">Comandos de Administrador</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ms-md-auto">
+                    <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -61,177 +60,151 @@
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
-                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
-                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
-                                <span class="d-lg-none ms-2">Toggle theme</span>
-                              </button>
-                              <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                                    <i class="fa-solid fa-sun fa-fw"></i>
-                                    <span class="ms-2">Light</span>
-                                    <i class="fa-solid fa-check ms-auto d-none"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                    <i class="fa-solid fa-moon fa-fw"></i>
-                                    <span class="ms-2">Dark</span>
-                                    <i class="fa-solid fa-check ms-auto d-none"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
-                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
-                                    <span class="ms-2">Auto</span>
-                                    <i class="fa-solid fa-check ms-auto"></i>
-                                  </button>
-                                </li>
-                              </ul>
-                            </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <script src="../js/darkmode.js"></script>
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#lista-de-comandos-do-jack-frost" class="nav-link">Lista de comandos do Jack Frost</a>
+            <li class="nav-item" data-level="1"><a href="#lista-de-comandos-do-jack-frost" class="nav-link">Lista de comandos do Jack Frost</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#adivinhar" class="nav-link">Adivinhar</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#aposta" class="nav-link">Aposta</a>
+            <li class="nav-item" data-level="2"><a href="#adivinhar" class="nav-link">Adivinhar</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#avatar" class="nav-link">Avatar</a>
+            <li class="nav-item" data-level="2"><a href="#aposta" class="nav-link">Aposta</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#banner" class="nav-link">Banner</a>
+            <li class="nav-item" data-level="2"><a href="#avatar" class="nav-link">Avatar</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#battle" class="nav-link">Battle</a>
+            <li class="nav-item" data-level="2"><a href="#banner" class="nav-link">Banner</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#cancelamento" class="nav-link">Cancelamento</a>
+            <li class="nav-item" data-level="2"><a href="#battle" class="nav-link">Battle</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#casamento" class="nav-link">Casamento</a>
+            <li class="nav-item" data-level="2"><a href="#cancelamento" class="nav-link">Cancelamento</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#chess" class="nav-link">Chess</a>
+            <li class="nav-item" data-level="2"><a href="#casamento" class="nav-link">Casamento</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#cowsay" class="nav-link">Cowsay</a>
+            <li class="nav-item" data-level="2"><a href="#chess" class="nav-link">Chess</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#daily" class="nav-link">Daily</a>
+            <li class="nav-item" data-level="2"><a href="#cowsay" class="nav-link">Cowsay</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#doar" class="nav-link">Doar</a>
+            <li class="nav-item" data-level="2"><a href="#daily" class="nav-link">Daily</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#duelo" class="nav-link">Duelo</a>
+            <li class="nav-item" data-level="2"><a href="#doar" class="nav-link">Doar</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#images" class="nav-link">Images</a>
+            <li class="nav-item" data-level="2"><a href="#emprestar" class="nav-link">Emprestar</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#investir" class="nav-link">Investir</a>
+            <li class="nav-item" data-level="2"><a href="#duelo" class="nav-link">Duelo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#jackgpt" class="nav-link">Jackgpt</a>
+            <li class="nav-item" data-level="2"><a href="#images" class="nav-link">Images</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#jogo" class="nav-link">Jogo</a>
+            <li class="nav-item" data-level="2"><a href="#investir" class="nav-link">Investir</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#lojinha" class="nav-link">Lojinha</a>
+            <li class="nav-item" data-level="2"><a href="#jackgpt" class="nav-link">Jackgpt</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#nsfw" class="nav-link">NSFW</a>
+            <li class="nav-item" data-level="2"><a href="#jogo" class="nav-link">Jogo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#onlyjack" class="nav-link">Onlyjack</a>
+            <li class="nav-item" data-level="2"><a href="#lojinha" class="nav-link">Lojinha</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#perfil" class="nav-link">Perfil</a>
+            <li class="nav-item" data-level="2"><a href="#nsfw" class="nav-link">NSFW</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#ping" class="nav-link">Ping</a>
+            <li class="nav-item" data-level="2"><a href="#onlyjack" class="nav-link">Onlyjack</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#ppp" class="nav-link">Ppp</a>
+            <li class="nav-item" data-level="2"><a href="#perfil" class="nav-link">Perfil</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#ppt" class="nav-link">Ppt</a>
+            <li class="nav-item" data-level="2"><a href="#ping" class="nav-link">Ping</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#premium" class="nav-link">Premium</a>
+            <li class="nav-item" data-level="2"><a href="#ppp" class="nav-link">Ppp</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#rank" class="nav-link">Rank</a>
+            <li class="nav-item" data-level="2"><a href="#ppt" class="nav-link">Ppt</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#roleta" class="nav-link">Roleta</a>
+            <li class="nav-item" data-level="2"><a href="#premium" class="nav-link">Premium</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#roll" class="nav-link">Roll</a>
+            <li class="nav-item" data-level="2"><a href="#rank" class="nav-link">Rank</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#sabio" class="nav-link">Sábio</a>
+            <li class="nav-item" data-level="2"><a href="#roleta" class="nav-link">Roleta</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#ship" class="nav-link">Ship</a>
+            <li class="nav-item" data-level="2"><a href="#roll" class="nav-link">Roll</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#subornar-ship" class="nav-link">Subornar ship</a>
+            <li class="nav-item" data-level="2"><a href="#sabio" class="nav-link">Sábio</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#sobre" class="nav-link">Sobre</a>
+            <li class="nav-item" data-level="2"><a href="#ship" class="nav-link">Ship</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#subornar-ship" class="nav-link">Subornar ship</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sobre" class="nav-link">Sobre</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -308,6 +281,14 @@ serão reconhecidor por meio da notação de movimentos <a href="https://www.che
 <p>Doa uma quantidade de dinheiro para outra pessoa.<br></p>
 <p><img alt="Comando battle" src="../imagens/doar.png" title="Comando battle" /><br><br>
 <code>d$doar &lt;quantidade&gt; &lt;usuário&gt;</code></p>
+<h2 id="emprestar">Emprestar</h2>
+<p>Empresta uma quantidade de dinheiro para outra pessoa.<br></p>
+<div class="admonition note">
+<p class="admonition-title">Aviso!</p>
+<p>Cada empréstimo é automaticamente cobrado em 30 dias.
+Caso você não tenha dinheiro suficiente, seu saldo FICARÁ negativo.</p>
+</div>
+<p><img alt="Comando emprestar" src="../imagens/emprestar.png" title="Comando emprestar" /><br><br></p>
 <h2 id="duelo">Duelo</h2>
 <p>Duela contra outro usuário.
 <img alt="Comando aposta" src="../imagens/duelo1.png" title="Comando aposta" /><br><br>
@@ -454,20 +435,19 @@ desabilitar com <code>d$desabilitarnsfw</code>)</p>
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -487,7 +467,7 @@ desabilitar com <code>d$desabilitarnsfw</code>)</p>
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
               <table class="table">
