@@ -1,0 +1,128 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-transform: lowercase;
+    text-align: left;
+    width: 100%;
+}
+.links {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+}
+.links a {
+    text-decoration: none;
+    color: #00FF00;
+    margin-right: 10px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+.links a:hover {
+    color: #ff00ff;
+}
+.projects {
+    width: 70%;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #1a1a1a;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    color: #ffffff;
+}
+.project-item {
+    margin-bottom: 15px;
+}
+.project-item h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #00FF00;
+    text-transform: lowercase;
+}
+.project-item p {
+    margin: 5px 0;
+    color: #aaaaaa;
+}
+.project-item a {
+    color: #00FF00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.project-item a:hover {
+    color: #ff00ff;
+}
+.blog-posts {
+    width: 70%;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #1a1a1a;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.blog-posts h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    color: #ffffff;
+}
+.blog-post-item {
+    margin-bottom: 15px;
+}
+.blog-post-item h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #00FF00;
+    text-transform: lowercase;
+}
+.blog-post-item p {
+    margin: 5px 0;
+    color: #aaaaaa;
+}
+.blog-post-item a {
+    color: #00FF00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.blog-post-item a:hover {
+    color: #ff00ff;
+}
+.content {
+    width: 70%;
+    height: auto;
+    border: 1px solid #ffffff;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #1a1a1a;
+    color: #aaaaaa;
+    font-size: 1rem;
+    border-radius: 5px;
+    overflow-y: auto;
+    white-space: normal;
+}
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    color: #ffffff;
+}
+.content p {
+    margin: 5px 0;
+    color: #aaaaaa;
+}
