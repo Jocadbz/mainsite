@@ -86,6 +86,10 @@
 
         .cta {
             animation: slideIn 0.5s ease-in-out 1.4s forwards;
+            display: flex; /* Adicionado para centralizar os botões */
+            flex-direction: column; /* Para empilhar os botões */
+            align-items: center; /* Centraliza horizontalmente */
+            gap: 10px; /* Espaçamento entre os botões */
         }
 
         .cta button {
@@ -97,7 +101,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
-            margin: 10px; /* Adicionado para espaçamento entre botões */
+            width: 250px; /* Alterado para largura fixa */
         }
 
         .cta button:hover {
@@ -189,6 +193,38 @@
             transform: scale(1.05);
         }
 
+        /* Styles for donation addresses */
+        .donation-address {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #2a2a2a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            word-break: break-all; /* Allow breaking long words */
+        }
+
+        .donation-address span {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+        .copy-btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -240,11 +276,10 @@
         </section>
         <section class="cta">
             <h2>Experimente o Jack Frost!</h2>
-            <br>
             <!-- Botão Atualizado para Mostrar o Modal -->
             <button onclick="showPolicyModal()">Começar</button>
-            <br></br>
             <button onclick="location.href = 'docs/';">Veja a documentação</button>
+            <button onclick="showDonationModal()">Apoie o Jack Frost</button>
         </section>
         
     </main>
@@ -269,15 +304,43 @@
         </div>
     </div>
 
+    <!-- Novo Modal de Doação -->
+    <div id="donation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Faça uma Doação</h2>
+            <p>Se você gosta do Jack Frost e quer apoiar o desenvolvimento, considere fazer uma doação para os endereços abaixo:</p>
+            
+            <p><strong>Bitcoin (BTC):</strong></p>
+            <div class="donation-address">
+                <span id="btc-address">bc1qhxgruzcm7mm07596yr4am7auv86a3wkpug7evm</span>
+                <button class="copy-btn" onclick="copyToClipboard('btc-address')">Copiar</button>
+            </div>
+
+            <p><strong>Monero (XMR):</strong></p>
+            <div class="donation-address">
+                <span id="xmr-address">42Wnca2AKiS3PuuLzg5vmcbY9dmA8ciHhMPh5rHYuxsnULickf8Ysnm2fK9Svv9NrX9t3YQjxJcjbd23tA2itb9RDer6g3R</span>
+                <button class="copy-btn" onclick="copyToClipboard('xmr-address')">Copiar</button>
+            </div>
+
+            <div class="modal-actions" style="justify-content: center;">
+                <button id="close-donation-modal-btn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Seleção dos elementos do modal
-        const modal = document.getElementById("policy-modal");
+        // Seleção dos elementos do modal de política
+        const policyModal = document.getElementById("policy-modal");
         const acceptBtn = document.getElementById("accept-btn");
         const cancelBtn = document.getElementById("cancel-btn");
 
-        // Exibir o modal
+        // Seleção dos elementos do modal de doação
+        const donationModal = document.getElementById("donation-modal");
+        const closeDonationModalBtn = document.getElementById("close-donation-modal-btn");
+
+        // Exibir o modal de política
         function showPolicyModal() {
-            modal.style.display = "flex";
+            policyModal.style.display = "flex";
         }
 
         // Aceitar os termos e redirecionar
@@ -285,17 +348,44 @@
             window.location.href = 'https://discord.com/oauth2/authorize?client_id=1167643852786638889';
         });
 
-        // Cancelar e fechar o modal
+        // Cancelar e fechar o modal de política
         cancelBtn.addEventListener("click", () => {
-            modal.style.display = "none";
+            policyModal.style.display = "none";
         });
 
-        // Fechar o modal ao clicar fora do conteúdo
+        // Fechar o modal de política ao clicar fora do conteúdo
         window.addEventListener("click", (event) => {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == policyModal) {
+                policyModal.style.display = "none";
             }
         });
+
+        // Exibir o modal de doação
+        function showDonationModal() {
+            donationModal.style.display = "flex";
+        }
+
+        // Fechar o modal de doação
+        closeDonationModalBtn.addEventListener("click", () => {
+            donationModal.style.display = "none";
+        });
+
+        // Fechar o modal de doação ao clicar fora do conteúdo
+        window.addEventListener("click", (event) => {
+            if (event.target == donationModal) {
+                donationModal.style.display = "none";
+            }
+        });
+
+        // Função para copiar texto para a área de transferência
+        function copyToClipboard(elementId) {
+            const textToCopy = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Endereço copiado para a área de transferência!");
+            }).catch(err => {
+                console.error('Erro ao copiar: ', err);
+            });
+        }
     </script>
 </body>
 </html>
