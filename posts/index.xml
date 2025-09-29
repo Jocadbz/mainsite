@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://jocadbz.xyz/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jocadbz.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stop Learning Slop on Programming and Do Something You Will Use</title>
-      <link>http://localhost:1313/posts/programmingslop/</link>
+      <link>https://jocadbz.xyz/posts/programmingslop/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/programmingslop/</guid>
+      <guid>https://jocadbz.xyz/posts/programmingslop/</guid>
       <description>A small writeup on how most guides and coursers make students write bad code</description>
     </item>
     <item>
       <title>Fuck your memory-safe language, write actual fucking code</title>
-      <link>http://localhost:1313/posts/memorysafe/</link>
+      <link>https://jocadbz.xyz/posts/memorysafe/</link>
       <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/memorysafe/</guid>
+      <guid>https://jocadbz.xyz/posts/memorysafe/</guid>
       <description>You&amp;rsquo;re focusing too much on the tool, and not on the outcome.</description>
     </item>
   </channel>
