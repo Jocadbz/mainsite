@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Present day, present time.</title>
-    <link>https://jocadbz.xyz/</link>
-    <description>Recent content in Home on Present day, present time.</description>
+    <title>Opinion on Present day, present time.</title>
+    <link>https://jocadbz.xyz/tags/opinion/</link>
+    <description>Recent content in Opinion on Present day, present time.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jocadbz.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jocadbz.xyz/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dados são o novo petróleo: e o governo quer os seus</title>
       <link>https://jocadbz.xyz/posts/dados-sao-o-novo-petroleo/</link>
@@ -21,20 +21,6 @@
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://jocadbz.xyz/posts/data-is-the-new-oil/</guid>
       <description>Writing up on the subject of your data being stolen and spied on.</description>
-    </item>
-    <item>
-      <title>Stop Learning Slop on Programming and Do Something You Will Use</title>
-      <link>https://jocadbz.xyz/posts/programmingslop/</link>
-      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://jocadbz.xyz/posts/programmingslop/</guid>
-      <description>A small writeup on how most guides and coursers make students write bad code</description>
-    </item>
-    <item>
-      <title>Fuck your memory-safe language, write actual fucking code</title>
-      <link>https://jocadbz.xyz/posts/memorysafe/</link>
-      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://jocadbz.xyz/posts/memorysafe/</guid>
-      <description>You&amp;rsquo;re focusing too much on the tool, and not on the outcome.</description>
     </item>
   </channel>
 </rss>
