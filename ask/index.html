@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Ask Me | Present day, present time.</title>
+
+      <link rel="stylesheet" href="/css/main.min.417561b94e5f1d7666be6f3c6f6e504e62ec4dee2a0db905ce6b9f187e454eb4.css" integrity="sha256-QXVhuU5fHXZmvm88b25QTmLsTe4qDbkFzmufGH5FTrQ=" crossorigin="anonymous">
+
+
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="site-body">
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header-inner">
+	<div class="site-identity">
+		<a class="site-title" href="/">Present day, present time.</a>
+		
+	</div>
+	
+  <nav class="site-nav" aria-label="Primary">
+      <a class="site-nav-link" href="/">Home</a>
+      <a class="site-nav-link" href="/posts/">Posts</a>
+      <a class="site-nav-link" href="/faq/">FAQ</a>
+      <a class="site-nav-link is-active" href="/ask/" aria-current="page">Ask</a>
+      <a class="site-nav-link" href="/books/">Books</a>
+      <a class="site-nav-link" href="/contact/">Contact</a>
+  </nav>
+
+</div>
+
+    </div>
+  </header>
+  <main class="site-main">
+    <div class="wrapper">
+      
+  <article>
+    <header class="content-header">
+      <h1 class="content-title">Ask Me</h1>
+    </header>
+
+    <div class="content-body">
+      
+
+      <form id="ask-form" class="ask-form">
+        <div class="form-group">
+          <label for="username">Username <span class="required">*</span></label>
+          <input type="text" id="username" name="username" required maxlength="32" placeholder="Your name or username">
+          <span class="char-count"><span id="username-count">0</span>/32</span>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Question <span class="required">*</span></label>
+          <textarea id="content" name="content" required rows="5" placeholder="What would you like to ask?"></textarea>
+          <span class="char-count"><span id="content-count">0</span>/<span id="content-max">1900</span></span>
+        </div>
+
+        <p class="form-note">Combined limit: <span id="total-remaining">1932</span> characters remaining</p>
+
+        <button type="submit" class="submit-btn">Send Question</button>
+      </form>
+    </div>
+  </article>
+
+  <style>
+    .ask-form {
+      margin-top: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.85rem;
+    }
+
+    .required {
+      color: #e74c3c;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .char-count {
+      display: block;
+      text-align: right;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .char-count.warning {
+      color: #e67e22;
+    }
+
+    .char-count.error {
+      color: #e74c3c;
+    }
+
+    .form-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .submit-btn {
+      background: var(--accent);
+      color: var(--background);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.85;
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  </style>
+
+  <script>
+    (function() {
+      
+      const TOTAL_LIMIT = 1932;
+      const USERNAME_MAX = 32;
+
+      const form = document.getElementById('ask-form');
+      const usernameInput = document.getElementById('username');
+      const contentInput = document.getElementById('content');
+      const usernameCount = document.getElementById('username-count');
+      const contentCount = document.getElementById('content-count');
+      const contentMax = document.getElementById('content-max');
+      const totalRemaining = document.getElementById('total-remaining');
+      const submitBtn = form.querySelector('.submit-btn');
+
+      function updateCounts() {
+        const usernameLen = usernameInput.value.length;
+        const contentLen = contentInput.value.length;
+
+        usernameCount.textContent = usernameLen;
+        contentCount.textContent = contentLen;
+
+        
+        const maxContent = TOTAL_LIMIT - usernameLen;
+        contentMax.textContent = maxContent;
+        contentInput.maxLength = maxContent;
+
+        const remaining = TOTAL_LIMIT - usernameLen - contentLen;
+        totalRemaining.textContent = remaining;
+
+        
+        const contentCountParent = contentCount.parentElement;
+        contentCountParent.classList.remove('warning', 'error');
+        if (remaining < 100) {
+          contentCountParent.classList.add('warning');
+        }
+        if (remaining < 0) {
+          contentCountParent.classList.add('error');
+        }
+
+        submitBtn.disabled = remaining < 0 || usernameLen === 0 || contentLen === 0;
+      }
+
+      usernameInput.addEventListener('input', updateCounts);
+      contentInput.addEventListener('input', updateCounts);
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const username = usernameInput.value.trim();
+        const content = contentInput.value.trim();
+
+        if (!username || !content) {
+          return;
+        }
+
+        const url = 'https://ask.jocadbz.xyz/?user=' + 
+          encodeURIComponent(username) + 
+          '&content=' + 
+          encodeURIComponent(content);
+
+        window.open(url, '_blank');
+      });
+
+      updateCounts();
+    })();
+  </script>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© 2025 Present day, present time.. Opinions are my own.</p>
+
+    </div>
+  </footer>
+</body>
+</html>
