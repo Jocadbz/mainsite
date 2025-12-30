@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Sign your letters, sign your data | Present day, present time.</title>
+
+      <link rel="stylesheet" href="/css/main.min.358e2a738bfddefd491f073191ffabd5613d6b1280429f645d2facbee4cb25cb.css" integrity="sha256-NY4qc4v93v1JHwcxkf&#43;r1WE9axKAQp9kXS&#43;svuTLJcs=" crossorigin="anonymous">
+
+
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="site-body">
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header-inner">
+	<div class="site-identity">
+		<a class="site-title" href="/">Present day, present time.</a>
+		
+	</div>
+	
+  <nav class="site-nav" aria-label="Primary">
+      <a class="site-nav-link" href="/">Home</a>
+      <a class="site-nav-link is-active" href="/posts/" aria-current="page">Posts</a>
+      <a class="site-nav-link" href="/faq/">FAQ</a>
+      <a class="site-nav-link" href="/ask/">Ask</a>
+      <a class="site-nav-link" href="/books/">Books</a>
+      <a class="site-nav-link" href="/contact/">Contact</a>
+      <a class="site-nav-link" href="/donate/">Donate</a>
+  </nav>
+
+</div>
+
+    </div>
+  </header>
+  <main class="site-main">
+    <div class="wrapper">
+      
+  <article>
+    <header class="content-header">
+      <h1 class="content-title">Sign your letters, sign your data</h1>
+        <p class="content-meta"><time datetime="2025-12-30">30 Dec 2025</time></p>
+    </header>
+
+    <div class="content-body">
+      <p>The internet is great for a lot of things: transferring large amounts of data and sharing knowledge here and there. However, it absolutely SUCKS for secrecy; hence the many fucking protocols for encryption and decryption. If you have worked with the internet long enough, you&rsquo;ll reach the same conclusion: nothing on the internet is 100% safe.</p>
+<p>But sure, you can stack encryption protocols and your data, though not fully safe, will be &ldquo;protected&rdquo;. More importantly, the modern internet — and more recently, AI — has a problem that was partially ignored for a long time and is now showing how bad a problem it can be: &ldquo;How are you sure that whoever sent you a message, data, or info is actually THAT person?&rdquo;</p>
+<p>This is not an issue of protecting whoever sends that message — if their account is breached, it&rsquo;s already over. Rather, it&rsquo;s a problem of who&rsquo;s standing in the middle. People can forge tweets, domains, videos, images, or other data that claim someone did or didn&rsquo;t do something, and it can become realistic enough to fool people. An attacker might send fake instructions to someone, which can end badly, or use a famous person&rsquo;s face to say something violent that scars their reputation. How can this be prevented?</p>
+<h2 id="signing-data">Signing data</h2>
+<p>The concept of signing actions and data is by no means new. Developers, especially those working on the Linux kernel, sign their commits with PGP keys. What does that mean, essentially?
+If a developer makes a commit and signs it, anyone can check the signature and compare it to the user&rsquo;s public key on their already-known website or keyserver. That means:</p>
+<ul>
+<li>
+<p>No one can take responsibility for that commit except the author.</p>
+</li>
+<li>
+<p>The author cannot later deny making the commit without losing their private key.</p>
+</li>
+<li>
+<p>Any developer can trace the changes back to the author.</p>
+</li>
+</ul>
+<p>Platforms like GitHub have native support for this: you can add your public key to your account and any commit you make will be marked as verified.</p>
+<p>But you don&rsquo;t need to stop at commits: e-mails can be signed and arbitrary data can be signed. All are completely verifiable and traceable, and they guarantee that only you can take ownership.</p>
+<h2 id="can-you-give-me-an-example">Can you give me an example?</h2>
+<p>Sure thing. This page.</p>
+<p>That&rsquo;s right: this page, that you are seeing, is gpg signed.</p>
+<p>You can verify with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -O https://jocadbz.xyz/posts/modern_communication/index.html
+</span></span><span style="display:flex;"><span>curl -O https://jocadbz.xyz/posts/modern_communication/index.html.sig
+</span></span><span style="display:flex;"><span>gpg --keyserver keyserver.ubuntu.com --recv-keys B1836DCE2F50BDF7
+</span></span><span style="display:flex;"><span>gpg --verify index.html.sig index.html
+</span></span></code></pre></div><h2 id="but-why-no-one-uses-it">But&hellip; why no one uses it?</h2>
+<p>TL;DR: Normies are idiots.</p>
+<p>More elaborate version: Maintaining a PGP key is somewhat technical. You need to know how to generate it, export your public and private key (so you don&rsquo;t upload your private key somewhere!), share it on your website or a keyserver, and SIGN your stuff with it.</p>
+<p>Also, modern platforms have replaced these mechanisms with things like accounts and passwords (which not only do not guarantee authenticity, they are also less secure), rendering the knowledge to use these tools largely obsolete.</p>
+<p>It is unrealistic to expect ordinary users to maintain such keys, and if they were obligatory they would probably be managed by a service provider with a wild layer of abstraction on top, therefore rendering the whole process useless.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>PGP keys are awesome. The concept of signing your data with a private digital key is solid and could be a way to escape the hell of fake AI-generated images and videos — if only people were aware of them and used them extensively.</p>
+<p><em>P.S. - I&rsquo;m building something related to this. More on it soon.</em></p>
+
+    </div>
+
+    
+  <p class="terms-list">
+    <span class="terms-label">Tags:</span>
+      <a class="terms-link" href="/tags/opinion/">Opinion</a>, 
+      <a class="terms-link" href="/tags/advice/">Advice</a>, 
+      <a class="terms-link" href="/tags/tech/">Tech</a>
+  </p>
+
+  </article>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© 2025 Present day, present time.. Opinions are my own.</p>
+
+    </div>
+  </footer>
+</body>
+</html>
