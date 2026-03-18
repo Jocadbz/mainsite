@@ -4,16 +4,16 @@
     <title>Posts on Present day, present time.</title>
     <link>https://jocadbz.xyz/posts/</link>
     <description>Recent content in Posts on Present day, present time.</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2023 08:30:00 -0700</lastBuildDate>
     <atom:link href="https://jocadbz.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big Brother wears nanny clothes</title>
       <link>https://jocadbz.xyz/posts/age_verification_laws/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://jocadbz.xyz/posts/age_verification_laws/</guid>
-      <description>The age verification systems on sites and apps is the total death of anonymity; Here&amp;rsquo;s why</description>
+      <description>The age verification systems on sites and apps is the total death of anonymity; Here&#39;s why</description>
     </item>
     <item>
       <title>O Grande Irmão veste roupas de babá</title>
@@ -27,14 +27,14 @@
       <link>https://jocadbz.xyz/posts/modern_communication/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://jocadbz.xyz/posts/modern_communication/</guid>
-      <description>A little write-up on my current view of the &amp;lsquo;fake content&amp;rsquo; issue with social media</description>
+      <description>A little write-up on my current view of the &#39;fake content&#39; issue with social media</description>
     </item>
     <item>
       <title>No, AI won&#39;t replace software engineers. Here is why</title>
       <link>https://jocadbz.xyz/posts/no-ai-wont-replace-swes/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://jocadbz.xyz/posts/no-ai-wont-replace-swes/</guid>
-      <description>Since AI and LLMs, one of the main statements I&amp;rsquo;ve been reading is: &amp;lsquo;AI will take programmers job&amp;rsquo;. Here is why I don&amp;rsquo;t think that will happen.</description>
+      <description>Since AI and LLMs, one of the main statements I&#39;ve been reading is: &#39;AI will take programmers job&#39;. Here is why I don&#39;t think that will happen.</description>
     </item>
     <item>
       <title>your gallery probably sucks: here is an solution</title>
@@ -69,7 +69,7 @@
       <link>https://jocadbz.xyz/posts/memorysafe/</link>
       <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://jocadbz.xyz/posts/memorysafe/</guid>
-      <description>You&amp;rsquo;re focusing too much on the tool, and not on the outcome.</description>
+      <description>You&#39;re focusing too much on the tool, and not on the outcome.</description>
     </item>
   </channel>
 </rss>
