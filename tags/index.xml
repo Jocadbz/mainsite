@@ -1,1 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Present day, present time.</title><link>https://jocadbz.xyz/tags/</link><description>Recent content in Tags on Present day, present time.</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jocadbz.xyz/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Advice</title><link>https://jocadbz.xyz/tags/advice/</link><pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate><guid>https://jocadbz.xyz/tags/advice/</guid><description/></item><item><title>Opinion</title><link>https://jocadbz.xyz/tags/opinion/</link><pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate><guid>https://jocadbz.xyz/tags/opinion/</guid><description/></item><item><title>Tech</title><link>https://jocadbz.xyz/tags/tech/</link><pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate><guid>https://jocadbz.xyz/tags/tech/</guid><description/></item><item><title>Politics</title><link>https://jocadbz.xyz/tags/politics/</link><pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate><guid>https://jocadbz.xyz/tags/politics/</guid><description/></item><item><title>Code</title><link>https://jocadbz.xyz/tags/code/</link><pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate><guid>https://jocadbz.xyz/tags/code/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on jocadbz&#39;s personal website</title>
+		<link>https://jocadbz.xyz/tags/</link>
+		<description>Recent content in Tags on jocadbz&#39;s personal website</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://jocadbz.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Advice</title>
+				<link>https://jocadbz.xyz/tags/advice/</link>
+				<pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://jocadbz.xyz/tags/advice/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Opinion</title>
+				<link>https://jocadbz.xyz/tags/opinion/</link>
+				<pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://jocadbz.xyz/tags/opinion/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Tech</title>
+				<link>https://jocadbz.xyz/tags/tech/</link>
+				<pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://jocadbz.xyz/tags/tech/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Politics</title>
+				<link>https://jocadbz.xyz/tags/politics/</link>
+				<pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://jocadbz.xyz/tags/politics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Code</title>
+				<link>https://jocadbz.xyz/tags/code/</link>
+				<pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+				<guid>https://jocadbz.xyz/tags/code/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
