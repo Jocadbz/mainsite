@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Mon, 02 Nov 2026 17:14:07 -0300</lastBuildDate>
 		
 			<atom:link href="https://jocadbz.xyz/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>VNDC-Next</title>
+				<link>https://jocadbz.xyz/projects/vndc-next/</link>
+				<pubDate>Mon, 02 Nov 2026 17:14:07 -0300</pubDate>
+				<guid>https://jocadbz.xyz/projects/vndc-next/</guid>
+				<description>&lt;p&gt;Vndc-next is a desktop reader for &lt;a href=&#34;https://en.wikipedia.org/wiki/Visual_novel&#34;&gt;Visual Novels&lt;/a&gt; in the &lt;a href=&#34;https://github.com/BASLQC/vnds&#34;&gt;VNDS&lt;/a&gt; format.&#xA;It is a fork of &lt;a href=&#34;https://github.com/chaoskagami&#34;&gt;chaoskagami&lt;/a&gt; code, updated to modern libraries and with added features (Such as zip support).&lt;/p&gt;&#xA;&lt;p&gt;tl;dr - To install, do the standard autotools dance, e.g. &lt;code&gt;./autogen.sh &amp;amp;&amp;amp; ./configure &amp;amp;&amp;amp; make -j4 &amp;amp;&amp;amp; make install&lt;/code&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;For generic platforms you need: SDL2, SDL2_mixer, SDL_image, SDL_ttf, and libarchive development files (for ZIP support).&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;make&lt;/code&gt; builds &lt;code&gt;vndc&lt;/code&gt; in the repository root; &lt;code&gt;make install&lt;/code&gt; installs it in the configured &lt;code&gt;bin&lt;/code&gt; directory. Run &lt;code&gt;./vndc -h&lt;/code&gt; if you don&amp;rsquo;t know how to run it. Have VNDS files ready. This includes foreground, sound, background, script, and optionally &lt;code&gt;default.ttf&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>O Desmanche da Mente</title>
 				<link>https://jocadbz.xyz/posts/o-desmanche-da-mente/</link>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VNDC-Next | jocadbz&#39;s personal website</title>
+
+      <link rel="stylesheet" href="/css/main.min.6bcc0bd3d0d2a860989ffd1b8b4cd08bbf55fc208f824db6278b8cd7770748c8.css" integrity="sha256-a8wL09DSqGCYn/0bi0zQi79V/CCPgk22J4uM13cHSMg=" crossorigin="anonymous">
+
+
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-backdrop" aria-hidden="true"></div>
+  
+    <img class="site-header-art" src="/images/jocadbz-header-wide.webp" alt="" width="1280" height="480" aria-hidden="true" fetchpriority="high">
+  
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header-inner">
+  <div class="site-identity">
+    <a class="site-title" href="/">jocadbz&#39;s personal website</a>
+  </div>
+</div>
+
+    </div>
+  </header>
+  <div class="wrapper page-layout">
+    <aside class="site-sidebar" aria-label="Site navigation">
+  
+  <section class="sidebar-section sidebar-section--primary">
+    <h2 class="sidebar-heading" id="sidebar-primary-heading">Navigation</h2>
+    <nav aria-labelledby="sidebar-primary-heading">
+      <ul class="sidebar-list">
+          <li>
+            <a class="site-nav-link" href="/">Home</a>
+          </li>
+          <li>
+            <a class="site-nav-link is-active" href="/projects/" aria-current="page">Projects</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/posts/">Posts</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/faq/">About</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/ask/">Ask</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/contact/">Contact</a>
+          </li>
+      </ul>
+    </nav>
+  </section>
+
+</aside>
+
+    <main class="site-main" id="main-content" tabindex="-1">
+      
+  <article class="project-page">
+    <header class="content-header">
+      <h1 class="content-title">VNDC-Next</h1>
+    </header>
+      <div class="project-overview">
+        <div class="project-actions">
+          <a class="project-download" href="https://github.com/Jocadbz/vndc-next/releases/tag/v1.0.0">Download</a>
+        </div>
+      </div>
+      <section class="project-section">
+        <h2 class="project-subheading">Description</h2>
+        <div class="content-body">
+          <p>Vndc-next is a desktop reader for <a href="https://en.wikipedia.org/wiki/Visual_novel">Visual Novels</a> in the <a href="https://github.com/BASLQC/vnds">VNDS</a> format.
+It is a fork of <a href="https://github.com/chaoskagami">chaoskagami</a> code, updated to modern libraries and with added features (Such as zip support).</p>
+<p>tl;dr - To install, do the standard autotools dance, e.g. <code>./autogen.sh &amp;&amp; ./configure &amp;&amp; make -j4 &amp;&amp; make install</code></p>
+<hr>
+<p>For generic platforms you need: SDL2, SDL2_mixer, SDL_image, SDL_ttf, and libarchive development files (for ZIP support).</p>
+<p><code>make</code> builds <code>vndc</code> in the repository root; <code>make install</code> installs it in the configured <code>bin</code> directory. Run <code>./vndc -h</code> if you don&rsquo;t know how to run it. Have VNDS files ready. This includes foreground, sound, background, script, and optionally <code>default.ttf</code>.</p>
+<p>VNDS games can use extracted asset directories or separate archives (<code>script.zip</code>, <code>foreground.zip</code>, <code>background.zip</code>, and <code>sound.zip</code>). You can also pass a whole-game archive with <code>-d path/to/game.zip</code>; it is extracted to a temporary directory and removed when VNDC exits. If an extracted directory and its matching ZIP are both present, VNDC uses the directory. For example, <code>background/</code> takes precedence over <code>background.zip</code>, and <code>game/</code> takes precedence over <code>game.zip</code>.</p>
+<hr>
+<p>A picture says a thousand words. Here is one screenshot of it running The Song of Saya.</p>
+<p><img src="./screenshot.png" alt="Screenie of Current State"></p>
+<p>Click, Space, or Enter advances text; use the arrow keys and Enter for choices. Hold Ctrl to skip text and background fades; it always stops at choices. H hides the text overlay, A toggles auto-advance, B opens the backlog, Esc opens the pause menu, and F11 toggles fullscreen.</p>
+
+        </div>
+      </section>
+  </article>
+
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© 2026 jocadbz&#39;s personal website. Opinions are my own. <span class="footer-separator" aria-hidden="true">|</span> Site admin: <a href="mailto:admin@jocadbz.xyz">admin@jocadbz.xyz</a></p>
+
+    </div>
+  </footer>
+</body>
+</html>
