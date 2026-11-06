@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booru Tagger | jocadbz&#39;s personal website</title>
+
+      <link rel="stylesheet" href="/css/main.min.6bcc0bd3d0d2a860989ffd1b8b4cd08bbf55fc208f824db6278b8cd7770748c8.css" integrity="sha256-a8wL09DSqGCYn/0bi0zQi79V/CCPgk22J4uM13cHSMg=" crossorigin="anonymous">
+
+
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-backdrop" aria-hidden="true"></div>
+  
+    <img class="site-header-art" src="/images/jocadbz-header-wide.webp" alt="" width="1280" height="480" aria-hidden="true" fetchpriority="high">
+  
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header-inner">
+  <div class="site-identity">
+    <a class="site-title" href="/">jocadbz&#39;s personal website</a>
+  </div>
+</div>
+
+    </div>
+  </header>
+  <div class="wrapper page-layout">
+    <aside class="site-sidebar" aria-label="Site navigation">
+  
+  <section class="sidebar-section sidebar-section--primary">
+    <h2 class="sidebar-heading" id="sidebar-primary-heading">Navigation</h2>
+    <nav aria-labelledby="sidebar-primary-heading">
+      <ul class="sidebar-list">
+          <li>
+            <a class="site-nav-link" href="/">Home</a>
+          </li>
+          <li>
+            <a class="site-nav-link is-active" href="/projects/" aria-current="page">Projects</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/posts/">Posts</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/faq/">About</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/ask/">Ask</a>
+          </li>
+          <li>
+            <a class="site-nav-link" href="/contact/">Contact</a>
+          </li>
+      </ul>
+    </nav>
+  </section>
+
+</aside>
+
+    <main class="site-main" id="main-content" tabindex="-1">
+      
+  <article class="project-page">
+    <header class="content-header">
+      <h1 class="content-title">Booru Tagger</h1>
+    </header>
+      <div class="project-overview">
+        <div class="project-actions">
+          <a class="project-download" href="https://github.com/Jocadbz/BooruTagger/releases/">Download</a>
+        </div>
+      </div>
+      <section class="project-section">
+        <h2 class="project-subheading">Description</h2>
+        <div class="content-body">
+          <p>A C++/Qt app to do a lot of tag editing on boorus (Danbooru, Shimmie, etc).</p>
+<h2 id="what-it-does">What it does</h2>
+<ul>
+<li>Single-ID, ascending/descending range, and tag-search sessions.</li>
+<li>Keyboard-first tag editing, undo/redo, autocomplete, instance-specific presets, and local edit history.</li>
+<li>Zoomable images and an embedded libmpv player with seeking, frame stepping, speed, looping, and audio controls.</li>
+<li>Fetch/merge/write/verify saves. Failed or uncertain submissions keep the draft and don&rsquo;t blindly retry.</li>
+<li>Multiple server/account profiles, but only one active session. Secrets use QtKeychain when requested; otherwise they stay in memory.</li>
+</ul>
+<h2 id="building">Building</h2>
+<p>Needs C++20, CMake, Ninja, Qt 6.4+ (base, OpenGL widgets, SQL/SQLite, Concurrent, Test), pkg-config, and libmpv. QtKeychain is optional. Extra Qt image-format plugins are useful.</p>
+<p>For release, use <code>-B build-release -DCMAKE_BUILD_TYPE=Release</code> and build that directory. Optional install: <code>cmake --install build-release --prefix ~/.local</code>.</p>
+<p>I think you can figure the rest out right? I hope so.</p>
+<h2 id="usage">Usage</h2>
+<p>Should be straightfoward, but to begin, add an account and then create a new tagging session.</p>
+<h2 id="screenshots">Screenshots</h2>
+<p><img src="./assets/screenshot.png" alt="Photo editor">
+<img src="./assets/screenshot2.png" alt="Video editor"></p>
+<h2 id="notes">Notes</h2>
+<p>Due to upstream fuckery by shimmie you will need both GraphQL and Ouroboros extensions enabled. (If your admin refuses, I&rsquo;m so sorry.)</p>
+<p>Also, I literally could not found any documentation on gelbooru edit tags, henceforth it is not supported. If somebody with enough IQ could point me that out, I would be very thankful.</p>
+
+        </div>
+      </section>
+  </article>
+
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>© 2026 jocadbz&#39;s personal website. Opinions are my own. <span class="footer-separator" aria-hidden="true">|</span> Site admin: <a href="mailto:admin@jocadbz.xyz">admin@jocadbz.xyz</a></p>
+
+    </div>
+  </footer>
+</body>
+</html>

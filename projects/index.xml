@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 02 Nov 2026 17:14:07 -0300</lastBuildDate>
+			<lastBuildDate>Thu, 05 Nov 2026 23:05:49 -0300</lastBuildDate>
 		
 			<atom:link href="https://jocadbz.xyz/projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Booru Tagger</title>
+				<link>https://jocadbz.xyz/projects/boorutagger/</link>
+				<pubDate>Thu, 05 Nov 2026 23:05:49 -0300</pubDate>
+				<guid>https://jocadbz.xyz/projects/boorutagger/</guid>
+				<description>&lt;p&gt;A C++/Qt app to do a lot of tag editing on boorus (Danbooru, Shimmie, etc).&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-it-does&#34;&gt;What it does&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Single-ID, ascending/descending range, and tag-search sessions.&lt;/li&gt;&#xA;&lt;li&gt;Keyboard-first tag editing, undo/redo, autocomplete, instance-specific presets, and local edit history.&lt;/li&gt;&#xA;&lt;li&gt;Zoomable images and an embedded libmpv player with seeking, frame stepping, speed, looping, and audio controls.&lt;/li&gt;&#xA;&lt;li&gt;Fetch/merge/write/verify saves. Failed or uncertain submissions keep the draft and don&amp;rsquo;t blindly retry.&lt;/li&gt;&#xA;&lt;li&gt;Multiple server/account profiles, but only one active session. Secrets use QtKeychain when requested; otherwise they stay in memory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;building&#34;&gt;Building&lt;/h2&gt;&#xA;&lt;p&gt;Needs C++20, CMake, Ninja, Qt 6.4+ (base, OpenGL widgets, SQL/SQLite, Concurrent, Test), pkg-config, and libmpv. QtKeychain is optional. Extra Qt image-format plugins are useful.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>VNDC-Next</title>
 				<link>https://jocadbz.xyz/projects/vndc-next/</link>

@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jocadbz.xyz/projects/boorutagger/</loc>
+    <lastmod>2026-11-05T23:05:49-03:00</lastmod>
+  </url><url>
     <loc>https://jocadbz.xyz/projects/</loc>
-    <lastmod>2026-11-02T17:14:07-03:00</lastmod>
+    <lastmod>2026-11-05T23:05:49-03:00</lastmod>
   </url><url>
     <loc>https://jocadbz.xyz/projects/vndc-next/</loc>
     <lastmod>2026-11-02T17:14:07-03:00</lastmod>
